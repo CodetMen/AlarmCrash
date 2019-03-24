@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEditActivity">
+
+    <!--Toolbar Custom-->
+    <include
+        android:id="@+id/appbar_addedit_activity"
+        layout="@layout/app_bar_add_edit" />
+
+    <!--Body-->
+    <LinearLayout
+        android:id="@+id/body_addedit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="22dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <requestFocus/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:layout_weight="1"
+                style="@style/FontCustomStyle1"/>
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/time_edit"
+                android:background="@drawable/shape_bg_edittext"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/date"
+                style="@style/FontCustomStyle1"/>
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/date_edit"
+                android:background="@drawable/shape_bg_edittext"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_marginTop="8dp"
+            style="@style/FontCustomStyle1"/>
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_edittext"
+            android:layout_marginTop="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:hint="@string/title"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/message"
+            style="@style/FontCustomStyle1"/>
+
+        <EditText
+            android:id="@+id/et_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:lines="6"
+            android:maxLines="6"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="@string/message_edit_hint"
+            android:scrollbars="vertical"
+            android:gravity="top|start"
+            android:background="@drawable/shape_bg_edittext_msg"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_edittext"
+            android:backgroundTint="@color/color7"
+            android:layout_marginTop="16dp"
+            android:text="@string/delete"
+            android:textColor="@color/color2"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

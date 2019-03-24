@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1076151238622",
+    "firebase_url": "https://alarm-crash.firebaseio.com",
+    "project_id": "alarm-crash",
+    "storage_bucket": "alarm-crash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076151238622:android:e96b5cc795a832d4",
+        "android_client_info": {
+          "package_name": "com.codetmen.alarmcrash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076151238622-ludhb3raijsqt28vqldshi8r3clrm2hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDysqqvL_iab50D3KoT-n0tfFHKWxz1iIU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

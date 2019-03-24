@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActionAlarmActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_display_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="@color/color7"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_display_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/date"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/color7"/>
+
+        <TextView
+            android:id="@+id/tv_display_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/color7"
+            android:layout_marginBottom="8dp"
+            android:text="@string/title"/>
+
+        <TextView
+            android:id="@+id/tv_display_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/message"
+            android:textColor="@color/color7" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:contentDescription="@string/button_cancel_alarm"
+        android:id="@+id/btn_STOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@id/adview_banner"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_bg_btn_round"
+        android:src="@drawable/ic_cancel_alarm"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adview_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1674500150931673/4440544367"/>
+
+</RelativeLayout>

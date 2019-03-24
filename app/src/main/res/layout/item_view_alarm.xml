@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/color3"
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:contentDescription="@string/logo"
+            android:id="@+id/iv_alarm_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_logo"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color7"
+                android:singleLine="true"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/tv_item_alarmTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/time"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/color7"/>
+
+            <TextView
+                android:id="@+id/tv_item_alarmDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/date"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/color7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:contentDescription="@string/button_edit_alarm"
+                android:id="@+id/ib_item_alarmEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_edit"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+            <View
+                android:id="@+id/line_horizontal"
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:background="#fff"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:contentDescription="@string/button_share_alarm"
+                android:id="@+id/ib_item_alarmShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_share"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
